@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>各种距离</title>
+  <style>
+    html
+    {
+      background-color: #ddd;
+      margin: 20px;
+      border: 30px #aaa solid;
+      padding: 20px;
+    }
+    body
+    {
+      margin: 40px;
+      padding: 50px;
+      border: 60px #F5BEBE solid;
+      background-color: #D762A4;
+    }
+    #content
+    {
+      width: 100%;
+      height: 100%;
+      background-color: #F146DB;
+      text-align: center;
+    }
+    #example
+    {
+      width: 300px;
+      height: 100px;
+      border: 60px #87BEF9 solid;
+      margin: 40px;
+      padding: 40px;
+      position: absolute;
+      background-color: #6CBCBF;
+      text-align: left;
+    }
+    #ec
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #084E6B;
+    }
+    #es
+    {
+      width: 300px;
+      height: 100px;
+      background-color: #F5E221;
+      color: #2C0847;
+      overflow: scroll;
+      position: relative;
+      top: -100px;
+    }
+    #sb{margin-top: -185px;}
+    .hm{position: absolute;left: 0;top:0;}
+    .hb{position: absolute;left: 20px;top: 20px;}
+    .hp{position: absolute;left: 50px;top:50px;}
+    .bm{position: absolute;left: 70px;top:70px;}
+    .bb{position: absolute;left: 110px;top:110px;}
+    .bp{position: absolute;left: 170px;top:170px;}
+    .dm{position: relative;left: -140px;top:-140px;}
+    .db{position: relative;left: -237px;top:-100px;}
+    .dp{position: relative;left: -41px;top:-60px; white-space:nowrap; }
+    .bcw{position: absolute;height: 0;border: 3px solid  #025E06;left: 170px;top:250px;color: #025E06;text-align: center;}
+    .bow{position: absolute;height: 0;border: 3px solid  #084D64;left: 110px;top:280px;color: #084D64;text-align: center;}
+    .bsw{position: absolute;height: 0;border: 3px solid  #120FB5;left: 0;top:310px;color: #120FB5;text-align: center;}
+    .ddw{position: absolute;height: 0;border: 3px solid  #5A0E8F;left: 0;top:340px;color: #5A0E8F;text-align: center;}
+    .dw{position: absolute;height: 0;border: 3px solid  #5A0E8F;left: 0;top:10px;color: #5A0E8F;text-align: center;}
+    .dsw{position: absolute;height: 0;border: 3px solid  #6E646D;left: 0;top:50px;color: #6E646D;text-align: center;}
+    .dcw{position: absolute;height: 0;border: 3px solid  #305804;left: 0;top:150px;color: #305804;text-align: center;}
+    .dow{position: absolute;height: 0;border: 3px solid  #701E1E;left: -60px;top:200px;color: #701E1E;text-align: center;}
+    .dcl{position: absolute;height: 0;border: 3px solid  #6B625F;left:380px;top:50px;color: #6B625F;text-align: center;}
+    .dol{position: absolute;height: 0;border: 3px solid  #10214C;top:50px;color: #10214C;text-align: center;}
+    .dl{position: absolute;height: 0;border: 3px solid  #240707;top:90px;color: #240707;text-align: center;}
+    .wsw,.wiw,.wow,.wsa,.dbs,.bst,.dds{position: relative;left: 420px;color: #fff;text-align: center;white-space:nowrap; }
+    .dsl{position: relative;color: #fff;text-align: center;top:100px; }
+  </style>
+</head>
+<body>
+  <span class="hm">html的margin:20px</span>
+  <span class="hb">html的border:30px</span>
+  <span class="hp">html的padding:20px</span>
+  <span class="bm">body的margin:40px</span>
+  <span class="bb">body的border:60px</span>
+  <span class="bp">body的padding:50px</span>
+
+  <div class="bcw"></div>
+  <div class="bow"></div>
+  <div class="bsw"></div>
+  <div class="ddw"></div>
+  <div id="content">
+   <span id="sm"></span>
+   <p id="sb"></p>
+   <div id="example">
+     <div id="ec">
+      <span class="dm">div的margin:40px</span>
+      <span class="db">div的border:60px</span>
+      <span class="dp">div的padding:40px</span>
+      <span class="wiw"></span>
+      <span class="wow"></span>
+      <span class="wsw"></span>
+      <span class="wsa"></span>
+      <span class="dbs"></span>
+      <span class="dds"></span>
+      <span class="bst"></span>
+      <span class="dds"></span>
+      <span class="dcw"></span>
+      <span class="dow"></span>
+      <span class="dcl"></span>
+      <span class="dol"></span>
+      <span class="dl"></span>
+      
+    </div>
+    <div id="es">
+      <span class="dw"></span>
+      <span class="dsw"></span>
+      <div style="width:600px;height:10px"></div>
+      <div style="position:relative"></div>
+      <span class="dsl"></span>
+    </div>
+   </div>
+  </div>
+</body>
+<script>
+  document.querySelector('html').style.height = window.innerHeight-140+'px';
+  document.body.style.height = window.innerHeight-440+'px';
+  var ex = document.querySelector('#example');
+   ex.style.left = (window.innerWidth/2)-270+'px';
+   ex.style.top = (window.innerHeight/2)-75+'px';
+
+  document.querySelector('#sm').innerHTML='当前浏览器内部可见宽度为:'+window.innerWidth+'px--可见高度为:'+window.innerHeight+'px(包含滚动条)';
+  document.querySelector('.bcw').style.width = document.body.clientWidth-6+'px';
+  document.querySelector('.bcw').innerHTML = 'document.body.clientWidth:'+document.body.clientWidth+'px';
+  document.querySelector('.bow').style.width = document.body.offsetWidth-6+'px';
+  document.querySelector('.bow').innerHTML = 'document.body.offsetWidth:'+document.body.offsetWidth+'px';
+  document.querySelector('.bsw').style.width = document.body.scrollWidth-6+'px';
+  document.querySelector('.bsw').innerHTML = 'document.body.scrollWidth(网页全文的可见宽度，不包括滚动条):'+document.body.scrollWidth+'px';
+  document.querySelector('.ddw').style.width = document.documentElement.clientWidth-6+'px';
+  document.querySelector('.ddw').innerHTML = 'document.documentElement.clientWidth(浏览器可见宽度，不包括滚动条):'+document.documentElement.clientWidth+'px';
+  document.querySelector('.wsw').innerHTML = 'window.screen.width(电脑屏幕分辨率):'+window.screen.width+'px';
+  document.querySelector('.wiw').innerHTML = 'window.innerWidth(浏览器内部可见宽度,包括滚动条):'+window.innerWidth+'px';
+  document.querySelector('.wow').innerHTML = 'window.outerWidth(浏览器整体可见宽度,包括工具栏等):'+window.outerWidth+'px';
+  document.querySelector('.wsa').innerHTML = 'window.screen.availWidth(电脑屏幕可用宽度):'+window.screen.availWidth+'px';
+  document.querySelector('.dbs').innerHTML = 'document.body.scrollTop(浏览器内部可见区域上方距网页上方的距离):'+document.body.scrollTop+'px';
+  document.querySelector('.dds').innerHTML = 'document.documentElement.scrollTop(浏览器内部可见区域上方距网页上方的距离):'+document.documentElement.scrollTop+'px';
+  document.querySelector('.bst').innerHTML = 'window.screenTop(浏览器外部上方距离电脑屏幕顶部的距离):'+window.screenTop+'px';
+  document.querySelector('.dw').innerHTML = '黄色div的width(div的contentke可见区域宽度，不包括滚动条):'+window.getComputedStyle(document.querySelector('#es')).width;+'px';
+  document.querySelector('.dsw').style.width = document.querySelector('#es').scrollWidth+'px';
+  document.querySelector('.dsw').innerHTML = '黄色div的scrowidth(div的全文宽度含padding，不包括滚动条):'+document.querySelector('#es').scrollWidth+'px';
+  document.querySelector('.dcw').style.width = document.querySelector('#example').clientWidth-6+'px';
+  document.querySelector('.dcw').innerHTML = 'div的clientWidth:'+document.querySelector('#example').clientWidth+'px';
+  document.querySelector('.dow').style.width = document.querySelector('#example').offsetWidth-6+'px';
+  document.querySelector('.dow').innerHTML = 'div的offsetWidth:'+document.querySelector('#example').offsetWidth+'px';
+  document.querySelector('.dcl').style.width = document.querySelector('#example').clientLeft-6+'px';
+  document.querySelector('.dcl').innerHTML = 'div的clientLeft (border的宽度):'+document.querySelector('#example').clientLeft+'px';
+  document.querySelector('.dol').style.width = document.querySelector('#example').offsetLeft-6+'px';
+  document.querySelector('.dol').style.left = -document.querySelector('#example').offsetLeft-60+'px';
+  document.querySelector('.dol').innerHTML = 'div的offsetLeft(div的border距离浏览器内部最左的距离):'+document.querySelector('#example').offsetLeft+'px';
+  document.querySelector('.dl').style.width = parseInt(document.querySelector('#example').style.left)-6+'px';
+  document.querySelector('.dl').style.left = -parseInt(document.querySelector('#example').style.left)-100+'px';
+  document.querySelector('.dl').innerHTML = 'div的left(div的margin距离浏览器内部最左的距离):'+document.querySelector('#example').style.left;
+  document.querySelector('.dsl').innerHTML = '黄色div的scrollLeft(div最左距离父元素content可视区域最左的距离，就是被卷曲的距离，需要触发滚动条):'+document.querySelector('#es').scrollLeft+'px';
+  document.addEventListener('mousemove',function(e)
+    {
+      document.querySelector('#sb').innerHTML = '[鼠标距离事件触发元素padding左上角的距离:event.offsetX,event.offsetY:('+e.offsetX+','+e.offsetY+')]<br/>[鼠标距离浏览器内部可视区域左上角的距离:event.clientX,event.clientY:('+e.clientX+','+e.clientY+')]<br>[鼠标距离html标签margin左上角的距离:event.pageX,event.pageY:('+e.pageX+','+e.pageY+')';
+    },true);
+</script>
+</html>
