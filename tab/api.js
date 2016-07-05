@@ -136,7 +136,7 @@ define(function(require,exports,module)
     {
         addEvent(superEl,eventType,doSth,1);
 
-        function doSth()
+        function doSth(event)
         {        
             var e = getEvent(event);
             var eventTarget = getTarget(e);

@@ -8,7 +8,8 @@ define(function(require,exports,module)
             getTarget        : getTarget,
             preventDefault   : preventDefault,
             stopPropagation  : stopPropagation,
-            delegate         : delegate
+            delegate         : delegate,
+            nodeIndex        : nodeIndex
         }
      module.exports = EventUtil;
     /*
@@ -134,8 +135,9 @@ define(function(require,exports,module)
     function delegate(superEl,eventType,el,callback)
     {
         addEvent(superEl,eventType,doSth,1);
-        function doSth()
-        {
+
+        function doSth(event)
+        {        
             var e = getEvent(event);
             var eventTarget = getTarget(e);
             if(eventTarget.tagName==el&&eventTarget.parentNode==superEl)
@@ -143,6 +145,21 @@ define(function(require,exports,module)
         }
 
         
+    }
+    /**********************************************************************************************************/
+
+    /*
+    *   计算节点在其父节点的索引位置
+    */
+
+    function nodeIndex(tar)
+    {
+        var childArr=tar.parentNode.children || tar.parentNode.childNodes
+        for(var i=0;i<childArr.length;i++)
+        {
+            if(tar===childArr[i])
+                return i;
+        }
     }
     /**********************************************************************************************************/
 
