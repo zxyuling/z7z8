@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>翻唱大赛 - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+		<meta name="description" content="" />
+<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+		
+		<link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+		<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+		
+		
+		
+	</head>
+
+	<body>	
+		<div class="z_top">
+			<div class="z_header">
+				<div class="z_top_nav">
+					<ul>
+	<li class="home">
+		<a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+	</li>
+		<li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+	<li class="b-gc" hasframe="true">
+		<a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+		<div class="i_div game" data-frame="game"></div>
+	</li>
+		<li class="live" hasframe="true">
+		<a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a>
+		<div class="i_div stream" data-frame="stream"></div>
+	</li>
+	<li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+	<li class="b-ml"><a class="i-link" target="_blank" href="http://bml.bilibili.com/index2016/?nav" title="BML">BML<em class="new"></em></a></li>
+	<li class="yoo" hasframe="true">
+		<a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+		<div class="i_div travel" data-frame="travel"></div>
+	</li>
+</ul>				</div>
+				<div class="uns_box">
+	<ul class="menu">
+		<li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+			<a class="i-link" href="http://space.bilibili.com/" target="_blank">
+				<img class="i_face">
+			</a>
+			<div id="i_menu_profile" class="i_menu">
+				<div class="i_menu_bg_t"></div>
+				<div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+				<div class="member-menu-wrp">
+					<ul class="member-menu">
+						<li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+						<li><a href="http://member.bilibili.com/#video_manage" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+						<li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+						<li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+					</ul>
+				</div>
+				<div class="member-bottom">
+					<a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+				</div>
+			</div>
+		</li>
+		<li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+        </li>
+		<li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+			<div class="num" id="dynamic_num_total"></div>
+			<a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+		</li>
+		<li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+			<a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+		</li>
+		<li id="i_menu_history_btn" guest="no" class="u-i">
+			<a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+		</li>
+		<li id="i_menu_login_reg" guest="yes" class="u-i">
+			<a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+		</li>
+		<li class="u-i b-post">
+			<a class="i-link" href="http://member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+			<ul class="s-menu">
+				<li><a href="http://member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+				<li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+
+		
+<script type="text/javascript">
+    if(window.browser.version.mobile) {
+        window.location.href = "http://www.bilibili.com/html/mobile_cover.html";
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="http://i2.hdslb.com/u_user/activities/2015fc/css/style4.css"> 
+<script type="text/javascript" src="http://static.hdslb.com/js/page.arc.js"></script>
+
+    <div class="cover-box">
+        <div class="cover-top"></div>
+        <div class="cover-posted">
+            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/title_2.png" alt="">
+            <img  src="http://i0.hdslb.com/u_user/activities/2015fc/img/paiming_1.png" alt="">
+            <ul class="publicity">
+                <li>
+                    <a class="abtn" href="http://www.bilibili.com/video/av2849301/" target="_blank">
+                        <img  src="http://i0.hdslb.com/video/3c/3c21958fb1eda3e4e669af7099931b8f.jpg" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>【牙龈子】即使那就是你的幸福 -Piano Ver.-【翻唱】</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2849301/" target="_blank"><span>牙龈子w</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.7</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">安定感十足！细节和感情都好棒！听好几遍都觉得很完美！</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="abtn" href="http://www.bilibili.com/video/av2917237/" target="_blank">
+                        <img src="http://i2.hdslb.com/video/24/24a58965a88852ffd1fa45a68c49f015.jpg" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>【MSN・奇迹的魔术师&贼恩】AAA-风香拂过的夏日回忆</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2917237/" target="_blank"><span>奇迹的魔术师</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.7</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">歌声带入感好强，一耳朵就被吸引到了，男声的感情和力度感棒！女声通透稳定！很棒的合唱！！</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mar-r">
+                    <a class="abtn" href="http://www.bilibili.com/video/av2922287/" target="_blank">
+                        <img src="http://i0.hdslb.com/video/02/02b07026ac2a3caa0ce49a333d1becbb.jpg" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>Sakitama～幸魂～</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2922287/" target="_blank"><span>砒霜卿</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.8</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">整体表现都近乎完美！男声的和声部分烘托了整首歌的气氛！太棒！</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="abtn" href="http://www.bilibili.com/video/av2826275/" target="_blank">
+                        <img src="http://i1.hdslb.com/video/a0/a09043b4964f5430930efc780fbba4d3.jpg" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>自尊心革命</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2826275/" target="_blank"><span>三畿道</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.7</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">animesong的标准水准！除了后期我基本听不出来是翻唱哈哈哈哈！不论高音和音色都很稳定！整体听下来没有什么缺点！</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="abtn" href="http://www.bilibili.com/video/av2827789/" target="_blank">
+                        <img src="http://i0.hdslb.com/video/2d/2d8dd20c0cbde5b68ddbf0badf1d4c77.jpg" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>【kalafina】storia</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2827789/" target="_blank"><span>哀蝉Aichan</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.8</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">三个声部的表现都很完美，尤其是中音和高音，通透稳定！低音稍微缺一点穿透力和存在感2333但是完全不影响整体的完成度！</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mar-r">
+                    <a class="abtn" href="http://www.bilibili.com/video/av2901138/" target="_blank">
+                        <img src="http://i2.hdslb.com/video/b2/b2bec939469eb9de7cc43a6911c8f7b8.jpg" alt="">
+                        <img  class="cover-tb" src="http://i0.hdslb.com/u_user/activities/2015fc/img/paiming_sp.png" alt="">
+                        <div class="m-mask" >
+                            <img src="http://i0.hdslb.com/u_user/activities/2015fc/img/icon_play.png" alt="">
+                        </div>
+                    </a>
+                    <div>
+                        <p>【DZ】Tell Your World 纯人声阿卡贝拉翻唱</p>
+                        <p class="mar-top">作者：<a href="http://www.bilibili.com/video/av2901138/" target="_blank"><span>幸运的DZ</span></a></p>
+                    </div>
+                    <div class="h-line"></div>
+                    <div class="c-rate">
+                        <div class="l-pf">
+                            <P class="pf-title">评分</P>
+                            <p class="c-score">9.5</p>
+                        </div>
+                        <div class="r-pw">
+                            <P class="pf-title">评委简评</P>
+                            <p class="pj-text">初音相关特别特别奖</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <img style="margin-top:70px;" src="http://i0.hdslb.com/u_user/activities/2015fc/img/paiming_2.png" alt="">
+            <ul class="c-rank">
+                <li>
+                    <a href="http://www.bilibili.com/video/av2827465/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【Niya阿布】大家的天空下</p>
+                                <p class="c-author">作者：<span>Niya阿布</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2826071/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【炸斯塔】Solitude</p>
+                                <p class="c-author">作者：<span>炸斯塔</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.2 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2826132/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【YuYu炭】孩子气的战争</p>
+                                <p class="c-author">作者：<span>YuYu炭</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.2
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2830658/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>Try--Si7ence&Katharina</p>
+                                <p class="c-author">作者：<span>简小璎</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2830150/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>Nothing I can't do【景三】</p>
+                                <p class="c-author">作者：<span>景33</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2844071/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【时砂】梦追人（原创PV付）</p>
+                                <p class="c-author">作者：<span>时砂</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.6 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>                
+                <li>
+                    <a href="http://www.bilibili.com/video/av2845734/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【未来君】共鸣进歌</p>
+                                <p class="c-author">作者：<span>天野奥提</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2873510/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【AcAcia翻唱】自尊心革命（银魂OP2）</p>
+                                <p class="c-author">作者：<span>AcAcia</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2862637/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【NaT】Summer Time Record 夏日记录</p>
+                                <p class="c-author">作者：<span>NNaT</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2874026/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【御守】一如既往的场所【命运石之门】</p>
+                                <p class="c-author">作者：<span>御守り</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.2
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2907003/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>《~secret base~你给我的所有》</p>
+                                <p class="c-author">作者：<span>五月雨隼人</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.2 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2912885/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【neko翻唱】疑心暗鬼</p>
+                                <p class="c-author">作者：<span>mayoのneko</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.5 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>                
+                <li>
+                    <a href="http://www.bilibili.com/video/av2917883/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>夏风中的日出</p>
+                                <p class="c-author">作者：<span>青木Aoki</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2918630/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>纯人声唯美演绎天空之城</p>
+                                <p class="c-author">作者：<span>Supertonic总裁</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.6 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2837549/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【五人合唱】热带鱼的眼泪 - Flower</p>
+                                <p class="c-author">作者：<span>墨橙菌</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.5
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2850879/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【8人合唱】太阳与向日葵【原创PV付】</p>
+                                <p class="c-author">作者：<span>小渚_</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2858233/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【末隠泉】曾经我也想过一了百了</p>
+                                <p class="c-author">作者：<span>末隐泉</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2905587/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>千本桜</p>
+                                <p class="c-author">作者：<span>dnaEdit</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>                
+                <li>
+                    <a href="http://www.bilibili.com/video/av2893369/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>Bye-Bye Lover</p>
+                                <p class="c-author">作者：<span>仮面胖次太郎</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2901780/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>深海地下都市</p>
+                                <p class="c-author">作者：<span>虫子Mushigo</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2854460/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【Mehee】章鱼LUKA★鲔鱼FEVER</p>
+                                <p class="c-author">作者：<span>みきMehee</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2820715/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【Humi】毒苹果与灰姑娘</p>
+                                <p class="c-author">作者：<span>Humi二美cTM</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.2
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2835952/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【紗由】青鸟【火影忍者疾风传OP】</p>
+                                <p class="c-author">作者：<span>紗由由</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.5 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li class="mar-r">
+                    <a href="http://www.bilibili.com/video/av2877158/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【Mus!X & 173】When They Cry×炉心融解 -Rosin Mix-</p>
+                                <p class="c-author">作者：<span>Mus!X</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.3 
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/av2903638/" target="_blank">
+                        <div class="rank-text">
+                            <div class="c-rank-l">
+                                <p>【lolo2513·小五】言語遊戲</p>
+                                <p class="c-author">作者：<span>lolo2513</span></p>
+                            </div>
+                            <div class="s-line"></div>
+                            <div class="c-rank-r">
+                               9.4
+                            </div>                  
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cover-play">
+            <img src="http://i1.hdslb.com/u_user/activities/2015fc/img/title_1.png" alt="">
+            <div class="p-expect" style="margin-top:-55px;">
+                <iframe src="http://www.bilibili.com/list/vote/22.html" marginheight="0" marginwidth="0" width="100%" frameborder="0"scrolling="no" name="iframepage" id="frame_content" style="width:100%;border:none; padding-top:10px;height:850px" >
+                 </iframe>
+                <script type="text/javascript">
+                function reinitIframe(){
+                        var iframe = document.getElementById("frame_content");
+                        try{
+                            iframe.height =  iframe.contentWindow.document.documentElement.scrollHeight;
+
+                        }catch (ex){}
+                    }
+                    window.setInterval("reinitIframe()", 200);
+                </script>
+            </div>
+        </div>
+        <div class="cover-rules">
+            <div class="rules-box">
+                <div class="text1">
+                    <p>1.用户录制视频，投稿至“音乐-翻唱区”，并选择参加活动：<strong>【夏日延长线，欢乐翻唱赛】</strong></p>
+                    <p>2. 视频投稿时间为：2015年8月28日——2015年9月18日。</p>
+                    <p>3. 视频长度需至少2分钟以上。</p>
+                    <p>4. 参赛主题为“夏天”， 曲目尽量能与夏天有关，健康向上，正能量优先！唱出你对这个夏天的纪念。</p>
+                    <p>5. 稿件必须为新创作的作品，不接受老稿重投。盗稿，升降调等其它非正当形式稿件一经发现举报立即取消资格。</p>
+                    <p>6. 每人不限投稿次数，但只可获得一次奖励，如同时获得多个奖项，以最高奖励为准。</p>
+                    <p>7. 为纪念初音未来8月31日诞生，凡投稿原唱为初音的作品，有机会获得一份额外特别大奖。</p>
+                    <p>8. 带有商业推广意图的广告内容、不和谐等内容不可参赛。</p>
+                    <p>9. 本活动最终解释权归哔哩哔哩动画所有。如有问题可联系maruko@bilibili.com</p>
+                </div>
+            </div>     
+        </div>
+        <div class="cover-score">
+            <div class="rules-box score-box">
+                <div class="text2">
+                    <h3>观众评分</h3>
+                    <p>每位拥有账号的用户都可为自己喜欢的作品评分。</p>
+                    <p>评分时间为：2015年8月28日——2015年9月22日</p>
+                    <p>每个2015年7月1日前注册的正式会员账号都可以对单个参赛作品进行一次评</p>
+                    <p>分（1-5星）请珍惜您的评分权利，慎重打分。</p>
+                    <h3>评委评分</h3>
+                    <p>比赛将成立组委会来进行综合打分。</p>
+                    <p>目前得到的情报——评委有：</p>
+                    <ul>
+                        <li>
+                            <a href="http://space.bilibili.com/607621#!/index" target="_black">
+                                <div class="people1"></div>
+                                <span>凑诗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://space.bilibili.com/78201#!/index" target="_black">
+                                <div class="people1 people2"></div>
+                                <span>雪霏岚岚</span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="http://space.bilibili.com/458203#!/index" target="_black">
+                                <div class="people1 people3"></div>
+                                <span>阿日湿</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://space.bilibili.com/833133#!/index" target="_black">
+                                <div class="people1 people4"></div>
+                                <span>西瓜kune</span>
+                            </a>
+                        </li>
+                       <li style="margin-right:0;">
+                             <a href="http://space.bilibili.com/341076#!/index" target="_black">
+                                <div class="people1 people5"></div>
+                                <span>莫非命</span>
+                            </a>
+                        </li>
+                        <li style="margin:30px 45px 0 120px;">
+                             <a href="http://space.bilibili.com/1337291#!/index" target="_black">
+                                <div class="people1 people6"></div>
+                                <span>洛萱</span>
+                            </a>
+                        </li>
+                        <li style="margin-top:30px;">
+                             <a href="http://space.bilibili.com/284120#!/index" target="_black">
+                                <div class="people1 people7"></div>
+                                <span>三无marblue</span>
+                            </a>
+                        </li>
+                        <li style="margin:30px 0 0 0;">
+                             <a href="http://space.bilibili.com/69332#!/index" target="_black">
+                                <div class="people1 people8"></div>
+                                <span style="width:96px;">DMYoung羊桑</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <img style="margin:30px 0 0 80px" src="http://i1.hdslb.com/u_user/activities/2015fc/img/text_1.png" alt="">
+                </div>
+            </div>     
+        </div>
+        <div class="cover-prize">
+            <div class="cover-prize1"></div>
+            <div class="cover-prize2"></div>
+        </div>
+        <!-- 主站分享开始 -->
+        <div class="arc-tool-bar">
+            <div class="block share"><span class="t">分享</span>
+                <div class="share-list" id="share_list">
+                    <div class="share-btn" id="btn_weibo" title="分享到微博"></div>
+                    <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信"></div>
+                    <div class="share-btn" id="btn_qqzone" title="分享到QQ空间"></div>
+                    <div class="share-btn" id="btn_baidu" title="分享到贴吧"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-header">评论列表</div>
+        <div class="box-body">
+            <div class="comment-container">
+                <!--评论-->
+                <div class="common">
+                    <div class="comm">
+                         <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(2815455, 1);" style="cursor:pointer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script type="text/javascript">loadLoginStatus();</script> 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.abtn').hover(function() {
+                    $(this).children('.m-mask').show();
+                }, function() {
+                    $(this).children('.m-mask').hide();
+                });
+
+                var shareTxt ='想和小伙伴们一起聚会K歌吗？快来参加我们的“夏日延长线”翻唱大赛吧！教练！我想在这个夏天留下点什么！';
+                bindShare({
+                    url: window.location.href,
+                    title: shareTxt,
+                    pic: 'http://i0.hdslb.com/u_user/activities/2015fc/img/share.png',
+                    desc: '想和小伙伴们一起聚会K歌吗？快来参加我们的“夏日延长线”翻唱大赛吧！教练！我想在这个夏天留下点什么！',
+                    summary: ' ',
+                    shortTitle: document.title,
+                    searchPic: false
+                }, "#share_list .share-btn, #share_list_simple .share-btn");
+
+
+            })
+        </script>   
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">Bilibili</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+					<a target="_blank" href="https://shop151111231.taobao.com/"><div class="cards taobao"><em></em></div></a>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+				</li>
+				<li>
+					<div class="tips">帮助</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+					<div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+					<div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+				</li>
+			</ul><div class="partner">
+				<div class="block left">
+					<div class="partner-banner"></div>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+					<p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+					<p>信息网络传播视听节目许可证：<span>0910417</span></p>
+					<p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+					<p>沪ICP证：<span>沪B2-20100043</span></p>
+					<p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+					<p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+				</div>
+			</div>
+			<div class="block right">
+				<a target="_blank" href="http://app.bilibili.com/">
+					<div class="phone">
+						<div class="pic"></div>
+						<em>手机端下载</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-app">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a target="_blank" href="http://weibo.com/bilibiliweb">
+					<div class="weibo">
+						<div class="pic"></div>
+						<em>新浪微博</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weibo">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a id="weixin">
+					<div class="weixin">
+						<div class="pic"></div>
+						<em>官方微信</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weixin">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	
+		
+		<script type="text/javascript">loadLoginStatus();</script>
+		<div style="display:none;">
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+			$('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+		});
+		</script>
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Bilibili Dancing Festival - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+		<meta name="description" content="" />
+<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+		
+		<link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+		<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+		
+		
+		
+	</head>
+
+	<body>	
+		<div class="z_top">
+			<div class="z_header">
+				<div class="z_top_nav">
+					<ul>
+	<li class="home">
+		<a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+	</li>
+		<li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+	<li class="b-gc" hasframe="true">
+		<a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+		<div class="i_div game" data-frame="game"></div>
+	</li>
+		<li class="live" hasframe="true">
+		<a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a>
+		<div class="i_div stream" data-frame="stream"></div>
+	</li>
+	<li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+	<li class="b-ml"><a class="i-link" target="_blank" href="http://bml.bilibili.com/index2016/?nav" title="BML">BML<em class="new"></em></a></li>
+	<li class="yoo" hasframe="true">
+		<a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+		<div class="i_div travel" data-frame="travel"></div>
+	</li>
+</ul>				</div>
+				<div class="uns_box">
+	<ul class="menu">
+		<li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+			<a class="i-link" href="http://space.bilibili.com/" target="_blank">
+				<img class="i_face">
+			</a>
+			<div id="i_menu_profile" class="i_menu">
+				<div class="i_menu_bg_t"></div>
+				<div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+				<div class="member-menu-wrp">
+					<ul class="member-menu">
+						<li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+						<li><a href="http://member.bilibili.com/#video_manage" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+						<li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+						<li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+					</ul>
+				</div>
+				<div class="member-bottom">
+					<a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+				</div>
+			</div>
+		</li>
+		<li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+        </li>
+		<li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+			<div class="num" id="dynamic_num_total"></div>
+			<a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+		</li>
+		<li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+			<a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+		</li>
+		<li id="i_menu_history_btn" guest="no" class="u-i">
+			<a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+		</li>
+		<li id="i_menu_login_reg" guest="yes" class="u-i">
+			<a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+		</li>
+		<li class="u-i b-post">
+			<a class="i-link" href="http://member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+			<ul class="s-menu">
+				<li><a href="http://member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+				<li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+
+		
+<link rel="stylesheet" type="text/css" href="http://i2.hdslb.com/u_user/activities/2015dancing/css/style1.css">
+<script type="text/javascript" src="http://static.hdslb.com/js/page.arc.js"></script>
+<script type="text/javascript" src="http://i0.hdslb.com/u_user/activities/2015dancing/js/dance.js"></script>
+    <div class="dance-box">
+        <div class="dance-top">
+            <div class="dance-content">
+                <div class="dance-btn">
+                    <a href="http://www.bilibili.com/topic/747.html" target="_black" class="btn-01"></a>
+                    <a href="http://www.bilibili.com/topic/717.html " target="_black" class="btn-02"></a>
+                </div>
+                <div class="dance-main">
+                    <div class="video-box">
+                        <div class="embed_box" style="width:791px; height:463px;margin: 0 auto;">
+                            <embed id="video_1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" allowscriptaccess="always" flashvars="cid=4214649&amp;aid=2698438&amp;as_wide=1" src="http://static.hdslb.com/play.swf" type="application/x-shockwave-flash" allowfullscreen="true" quality="high" class="plays" style="width: 100%; height: 100%;margin-top:7px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    if(window.browser.version.mobile){
+                        $('.embed_box').css({
+                            'background':'url(http://i0.hdslb.com/u_user/activities/2015dancing/img/banner.png)',
+                            'background-size':'cover'
+                           }).append('<div style="width:100%;height:100%;background:url(http://static.hdslb.com/images/stop.png) no-repeat center center;"></div>').wrap('<a href="http://www.bilibili.com/video/av2698438/"></a>').find('embed').hide();
+                        $(function() {$('.goto-mobile').remove();});
+                    }
+                    
+                    </script> 
+                </div>
+                <div class="img-content">
+                     <div class="img-box">
+                        <div class="hard"></div>
+                        <div class="big-img">
+                            <img class='act' src="http://i0.hdslb.com/u_user/activities/2015dancing/img/1.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/2.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/3.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/4.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/5.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/6.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/7.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/8.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/9.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/10.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/11.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/12.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/13.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/14.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/15.png" alt="">
+                            <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/16.png" alt="">
+                        </div>
+                        <div class="Frame">
+                            <div class="small-img">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_1.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_2.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_3.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_4.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_5.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_6.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_7.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_8.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_9.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_10.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_11.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_12.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_13.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_14.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_15.png" alt="">
+                                <img src="http://i0.hdslb.com/u_user/activities/2015dancing/img/on_16.png" alt="">
+                            </div>
+                        </div>
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                        <span class='arrow-l'></span>
+                        <span class='arrow-r'></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-introduction">
+            <ul class="guest">
+                <li><a href="http://space.bilibili.com/622863#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/608#!/index" class="mr-199" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/271126#!/index" class="mr-202" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/734221#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/733995#!/index" class="mr-199" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/5276#!/index" class="mr-202" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/95417#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/111362#!/index" class="mr-199" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/44524#!/index" class="mr-202" target="_black"></a></li>
+            </ul>
+        </div>
+        <div class="d-recruit">
+            <ul class="r-dancer">
+                <li><a href="http://space.bilibili.com/26473#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/763137#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/345784#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/611781#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/448361#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/40823#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2183736#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/338675#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2851020#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/941422#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2946474#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/529813#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/755054#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/1725111#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/893380#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/1390987#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/8152984#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/1672137#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2693874#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/753038#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/534130#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/664066#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/814727#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/272687#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/829863#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/870257#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/939756#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2964525#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/3737366#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/73937#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/8470834#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/1742953#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/4632990#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/446799#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/1725999#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/7052267#!/index" target="_black"></a></li>
+                <li><a href="http://space.bilibili.com/2877784#!/index" target="_black"></a></li>
+            </ul>
+        </div>
+        <!-- 主站分享开始 -->
+                <div class="arc-tool-bar">
+                    <div class="block share"><span class="t">分享</span>
+                        <div class="share-list" id="share_list">
+                            <div class="share-btn" id="btn_weibo" title="分享到微博"></div>
+                            <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信"></div>
+                            <div class="share-btn" id="btn_qqzone" title="分享到QQ空间"></div>
+                            <div class="share-btn" id="btn_baidu" title="分享到贴吧"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-header">评论列表</div>
+                <div class="box-body">
+                    <div class="comment-container">
+                        <!--评论-->
+                        <div class="common">
+                            <div class="comm">
+                                 <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(2698438, 1);" style="cursor:pointer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">Bilibili</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+					<a target="_blank" href="https://shop151111231.taobao.com/"><div class="cards taobao"><em></em></div></a>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+				</li>
+				<li>
+					<div class="tips">帮助</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+					<div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+					<div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+				</li>
+			</ul><div class="partner">
+				<div class="block left">
+					<div class="partner-banner"></div>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+					<p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+					<p>信息网络传播视听节目许可证：<span>0910417</span></p>
+					<p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+					<p>沪ICP证：<span>沪B2-20100043</span></p>
+					<p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+					<p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+				</div>
+			</div>
+			<div class="block right">
+				<a target="_blank" href="http://app.bilibili.com/">
+					<div class="phone">
+						<div class="pic"></div>
+						<em>手机端下载</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-app">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a target="_blank" href="http://weibo.com/bilibiliweb">
+					<div class="weibo">
+						<div class="pic"></div>
+						<em>新浪微博</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weibo">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a id="weixin">
+					<div class="weixin">
+						<div class="pic"></div>
+						<em>官方微信</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weixin">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	
+		
+		<script type="text/javascript">loadLoginStatus();</script>
+		<div style="display:none;">
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+			$('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+		});
+		</script>
+		</div>
+		
+		
+	</body>
+</html>

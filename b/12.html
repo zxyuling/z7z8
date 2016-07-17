@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>鬼畜大赏 - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+		<meta name="description" content="" />
+<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+		
+		<link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+		<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+		
+		
+		
+	</head>
+
+	<body>	
+		<div class="z_top">
+			<div class="z_header">
+				<div class="z_top_nav">
+					<ul>
+	<li class="home">
+		<a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+	</li>
+		<li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+	<li class="b-gc" hasframe="true">
+		<a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+		<div class="i_div game" data-frame="game"></div>
+	</li>
+		<li class="live" hasframe="true">
+		<a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a>
+		<div class="i_div stream" data-frame="stream"></div>
+	</li>
+	<li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+	<li class="b-ml"><a class="i-link" target="_blank" href="http://bml.bilibili.com/index2016/?nav" title="BML">BML<em class="new"></em></a></li>
+	<li class="yoo" hasframe="true">
+		<a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+		<div class="i_div travel" data-frame="travel"></div>
+	</li>
+</ul>				</div>
+				<div class="uns_box">
+	<ul class="menu">
+		<li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+			<a class="i-link" href="http://space.bilibili.com/" target="_blank">
+				<img class="i_face">
+			</a>
+			<div id="i_menu_profile" class="i_menu">
+				<div class="i_menu_bg_t"></div>
+				<div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+				<div class="member-menu-wrp">
+					<ul class="member-menu">
+						<li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+						<li><a href="http://member.bilibili.com/#video_manage" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+						<li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+						<li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+					</ul>
+				</div>
+				<div class="member-bottom">
+					<a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+				</div>
+			</div>
+		</li>
+		<li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+        </li>
+		<li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+			<div class="num" id="dynamic_num_total"></div>
+			<a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+		</li>
+		<li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+			<a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+		</li>
+		<li id="i_menu_history_btn" guest="no" class="u-i">
+			<a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+		</li>
+		<li id="i_menu_login_reg" guest="yes" class="u-i">
+			<a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+		</li>
+		<li class="u-i b-post">
+			<a class="i-link" href="http://member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+			<ul class="s-menu">
+				<li><a href="http://member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+				<li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+
+		
+<script type="text/javascript">
+    if(window.browser.version.mobile) {
+        window.location.href = "http://www.bilibili.com/html/mobile_Kichiku.html";
+    }
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://i2.hdslb.com/u_user/activities/2015guicu/css/guicu12.css" />
+<script type="text/javascript" src="http://static.hdslb.com/js/page.arc.js"></script> <script type="text/javascript" src="http://i1.hdslb.com/u_user/activities/2015guicu/js/gucu.js"></script>
+<div class="g-box" style="padding-bottom: 50px;"><!--         <div class="d-side" style="right:0">
+    <ul data-rol = 'my-button'>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div> -->
+<div class="g-top">&nbsp;</div>
+<div class="yun-01">&nbsp;</div>
+<div class="yun-01 yun-02">&nbsp;</div>
+<div class="yun-01 yun-03">&nbsp;</div>
+<div class="g-body" style="box-shadow: 0px 12px 50px #390002;">
+<div class="top-text" data-rol="slide-position">夏日炎炎，长夜漫漫，少年少女们是否无心睡眠、倍感寂寞寥落？听说，夏天的夜晚,是一年四季中最浪漫的夜晚。听说，做鬼畜就能有女朋友？对了！我们准备了各式各样的女（nan）朋友，等你们来认领！少年少女们！一起来成为鬼畜王吧！撒~一GO~~</div>
+<!-- 视频直播 -->
+<div class="video-box">
+<div class="rule-top" style="margin:20px 0 0 20px;">
+<h2>参赛作品展示</h2>
+</div>
+<div class="g-expect"><iframe class="g-btn" src="http://www.bilibili.com/list/vote/11.html" allowtransparency="true" marginwidth="0" marginheight="0" align="top" scrolling="No" frameborder="0" hspace="0" vspace="0" style="width:100%;height:936px;;border:none;overflow: no-scroll;"></iframe></div>
+</div>
+<div class="g-rule" data-rol="slide-position">
+<div class="g-rule-l">
+<div class="rule-top">
+<h2>参赛规则</h2>
+</div>
+<div class="rule-text">
+<p>1. 视频需投稿于&ldquo;鬼畜区&rdquo;，仅限自制作品，代投、搬运、转载类均不参与活动。</p>
+<p>（需使用素材音调教，单纯的画面抽动类作品不参与本活动，具体以审核判断为准）</p>
+<p>2. 视频投稿时间为：2015年7月1日&mdash;&mdash;2015年7月31日。</p>
+<p>（将2015年7月1日前已投稿的视频删除后重新投稿，经举报核实，将取消活动资格。）</p>
+<p>3.  视频封面必须包含视频中所使用的素材之一。</p>
+<p>4. 视频长度需至少1分钟。</p>
+<p>5. UP主制作完成后必须自己先洗脑循环⑨遍。</p>
+<p>6. 每人限投稿1次参加活动，以最晚投稿为准，删除重投，原来所累积评分将清零，请慎重操作。</p>
+<p>7. 带有商业推广意图的广告内容不可参赛。</p>
+<img class="b-shadow" src="http://i0.hdslb.com/u_user/activities/2015guicu/img/text.png" alt="" /> 	            		<!-- <p class="b-shadow">8. 由于相关规定、政策所限制的动画或其他过度猎奇、不和谐素材不可使用，一旦出现，将取消参赛资格！请注意！</p>
+	            		<p class="b-shadow">如有问题请联系   maruko@bilibili.com</p> -->
+<p>9. 本活动最终解释权归哔哩哔哩动画所有。</p>
+</div>
+</div>
+<div class="g-rule-r"><img src="http://i1.hdslb.com/u_user/activities/2015guicu/img/philosophy.png" alt="" /></div>
+</div>
+<div class="g-score" data-rol="slide-position">
+<div class="rule-top">
+<h2>评分规则</h2>
+</div>
+<div class="rule-text">
+<p>每位拥有账号的用户都可为自己喜欢的作品评分。</p>
+<p>1、评分时间为：2015年7月10日&mdash;&mdash;2015年8月4日</p>
+<p>2、每个2015年6月1日前注册的正式会员账号都可以对单个参赛作品进行一次评分（1-5星）<br />
+参与评分有机会获得神秘奖品哦~~</p>
+</div>
+</div>
+<div class="g-prize" data-rol="slide-position">
+<div class="rule-top" style="margin-left: 20px;">
+<h2>参赛奖品列表</h2>
+</div>
+<div class="rule-text" style="margin-left: 20px;">
+<p>所有参赛用户都可获得特殊的活动纪念标签使用一年哦~获奖还能永久使用！</p>
+</div>
+<ul class="prize-list">
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi01.png" alt="" />
+    <div class="prize-text"><img src="http://i0.hdslb.com/u_user/activities/2015guicu/img/no1.png" alt="" />
+    <p>最优质的女朋友</p>
+    <p>外星人（Alienware）ALW15ER-1718</p>
+    <p>15.6英寸+奖金3333</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi02.png" alt="" />
+    <div class="prize-text"><img src="http://i1.hdslb.com/u_user/activities/2015guicu/img/no2.png" alt="" />
+    <p>捧在手心的女朋友</p>
+    <p>iPhone 6 Plus 64GB +奖金2333</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi03.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no3.png" alt="" />
+    <p>别人家的女朋友</p>
+    <p>PlayStation 4（国行）+奖金2333</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi04.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no4.png" alt="" />
+    <p>活在硬盘里的女朋友</p>
+    <p>1000以下硬盘（附带1G种子&gt;&lt;）+奖金998</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi05.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no5.png" alt="" />
+    <p>可以prpr的女朋友</p>
+    <p>500以下在售手办+奖金998</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi06.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no6.png" alt="" />
+    <p>可以prpr的男朋友</p>
+    <p>500以下在售手办（男）+bilibili定制肥皂</p>
+    <p>+奖金666</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi07.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no7.png" alt="" />
+    <p>手感超棒的女朋友</p>
+    <p>等身抱枕+奖金500</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi08.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no8.png" alt="" />
+    <p>超骨感的女朋友</p>
+    <p>GuLuo骷髅手办+奖金500</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi09.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no9.png" alt="" />
+    <p>可食用的女朋友</p>
+    <p>崂山白花蛇草水一箱+崂山可</p>
+    <p>乐一箱+小粘土+奖金500</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi010.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no10.png" alt="" />
+    <p>最贴心的女朋友</p>
+    <p>飞机&middot;杯+奖金500</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pi011.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no11.png" alt="" />
+    <p>葛平老师选择奖</p>
+    <p>葛平签名记事本+手办+奖金2333</p>
+    </div>
+    </li>
+    <li><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/pic12.png" alt="" />
+    <div class="prize-text"><img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/no11.png" alt="" />
+    <p>新素材创意奖</p>
+    <p>佳能70D 国行</p>
+    </div>
+    </li>
+</ul>
+</div>
+</div>
+<div class="g-work">
+<div class="rule-top">
+<h2>获奖公示</h2>
+</div>
+</div>
+<div>
+<ul class="g-posted">
+    <li><a class="a1" href="http://www.bilibili.com/video/av2648921/" target="_blank">                       <img class="g-img" src="http://i2.hdslb.com/u_user/activities/2015guicu/img/01.png" alt="" />                       </a>
+    <p class="g-name">【鬼畜全明星】双♂人♂舞</p>
+    <p class="g-authors">UP主 : 伊丽莎白鼠</p>
+    <p class="g-grades">评分:149758</p>
+    </li>
+    <li><a class="a2" href="http://www.bilibili.com/video/av2565074/" target="_blank">                         <img class="g-img" src="http://i2.hdslb.com/u_user/activities/2015guicu/img/02.png" alt="" />                     </a>
+    <p class="g-name">【司徒主唱】~稻香~（来自朗朗的正能量）</p>
+    <p class="g-authors">UP主 : 天气米雪</p>
+    <p class="g-grades">评分:115460</p>
+    </li>
+    <li><a class="a3" href="http://www.bilibili.com/video/av2542941/" target="_blank">                         <img class="g-img" src="http://i2.hdslb.com/u_user/activities/2015guicu/img/03.png" alt="" />                     </a>
+    <p class="g-name">全明星 江南Style【非洲BOY领衔】</p>
+    <p class="g-authors">UP主 : 可樂C</p>
+    <p class="g-grades">评分:105756</p>
+    </li>
+    <li style="margin-right:0"><a class="a4" href="http://www.bilibili.com/video/av2509078/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/04.png" alt="" />                     </a>
+    <p class="g-name">【诸葛亮&amp;王朗】三国rap-以父之名</p>
+    <p class="g-authors">UP主 : 浸猪笼的狗</p>
+    <p class="g-grades">评分:103890</p>
+    </li>
+    <li><a class="a5" href="http://www.bilibili.com/video/av2595824/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/05.png" alt="" />                     </a>
+    <p class="g-name">【巡山】山的供养</p>
+    <p class="g-authors">UP主 : 夜游之夜魔</p>
+    <p class="g-grades">评分:91276</p>
+    </li>
+    <li><a class="a6" href="http://www.bilibili.com/video/av2557058/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/06.png" alt="" />                     </a>
+    <p class="g-name">【全明星】爱啦啦</p>
+    <p class="g-authors">UP主 : A路人</p>
+    <p class="g-grades">评分:89840</p>
+    </li>
+    <li><a class="a7" href="http://www.bilibili.com/video/av2544805/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/07.png" alt="" />                     </a>
+    <p class="g-name">【德剧】屌丝元首【全明星助阵】</p>
+    <p class="g-authors">UP主 : 皓月-moonqshine</p>
+    <p class="g-grades">评分:86906</p>
+    </li>
+    <li style="margin-right:0"><a class="a8" href="http://www.bilibili.com/video/av2512286/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/08.png" alt="" />                     </a>
+    <p class="g-name">天线♂宝宝（对比版）</p>
+    <p class="g-authors">UP主 : 泽野螳螂</p>
+    <p class="g-grades">评分:86662</p>
+    </li>
+    <li><a class="a9" href="http://www.bilibili.com/video/av2595437/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/09.png" alt="" />                     </a>
+    <p class="g-name">植物醒哥与梁非凡屋顶上的决战</p>
+    <p class="g-authors">UP主 : 1210280236</p>
+    <p class="g-grades">评分:81202</p>
+    </li>
+    <li><a class="a10" href="http://www.bilibili.com/video/av2617986/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/10.png" alt="" />                     </a>
+    <p class="g-name">【RAP】你还记得那些年看过的广告嘛</p>
+    <p class="g-authors">UP主 : 小可儿</p>
+    <p class="g-grades">评分:79868</p>
+    </li>
+    <li><a class="a11" href="http://www.bilibili.com/video/av2590061/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/11.png" alt="" />                     </a>
+    <p class="g-name">[葛平] 莫忘初衷 (海阔天空) 原创填词</p>
+    <p class="g-authors">UP主 : 朱先生先生</p>
+    </li>
+    <li style="margin-right:0"><a class="a12" href="http://www.bilibili.com/video/av2625588/" target="_blank">                         <img src="http://i2.hdslb.com/u_user/activities/2015guicu/img/11.png" alt="" />                     </a>
+    <p class="g-name">【地铁音MAD】【上海地铁】【Love Live】欲于魔都地铁起舞</p>
+    <p class="g-authors">UP主 : 雅音宫羽MasaneMiyaP</p>
+    </li>
+</ul>
+</div>
+<!-- 主站分享开始 -->
+<div class="arc-tool-bar" data-rol="slide-position">
+<div class="block share"><span class="t">分享</span>
+<div class="share-list" id="share_list">
+<div class="share-btn" id="btn_weibo" title="分享到微博">&nbsp;</div>
+<div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信">&nbsp;</div>
+<div class="share-btn" id="btn_qqzone" title="分享到QQ空间">&nbsp;</div>
+<div class="share-btn" id="btn_baidu" title="分享到贴吧">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="box-header">评论列表</div>
+<div class="box-body">
+<div class="comment-container"><!--评论-->
+<div class="common">
+<div class="comm">
+<div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(2473672, 1);" style="cursor:pointer">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">loadLoginStatus();</script>          <script type="text/javascript">
+                $(document).ready(function() {
+                var shareTxt ='鬼畜大赛';
+                bindShare({
+                    url: window.location.href,
+                    title: shareTxt,
+                    pic: 'http://i2.hdslb.com/u_user/activities/2015guicu/img/fenx.jpg',
+                    desc: '#bilibili夏夜鬼畜大赏# bilibili准备了各种女朋jiang友pin~活动时间：2015年7月1日--2015年7月31日。到底谁能获得第四shi名呢？',
+                    summary: ' ',
+                    shortTitle: document.title,
+                    searchPic: false
+                }, "#share_list .share-btn, #share_list_simple .share-btn");
+    })
+        </script>
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">Bilibili</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+					<a target="_blank" href="https://shop151111231.taobao.com/"><div class="cards taobao"><em></em></div></a>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+				</li>
+				<li>
+					<div class="tips">帮助</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+					<div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+					<div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+				</li>
+			</ul><div class="partner">
+				<div class="block left">
+					<div class="partner-banner"></div>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+					<p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+					<p>信息网络传播视听节目许可证：<span>0910417</span></p>
+					<p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+					<p>沪ICP证：<span>沪B2-20100043</span></p>
+					<p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+					<p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+				</div>
+			</div>
+			<div class="block right">
+				<a target="_blank" href="http://app.bilibili.com/">
+					<div class="phone">
+						<div class="pic"></div>
+						<em>手机端下载</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-app">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a target="_blank" href="http://weibo.com/bilibiliweb">
+					<div class="weibo">
+						<div class="pic"></div>
+						<em>新浪微博</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weibo">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a id="weixin">
+					<div class="weixin">
+						<div class="pic"></div>
+						<em>官方微信</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weixin">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	
+		
+		<script type="text/javascript">loadLoginStatus();</script>
+		<div style="display:none;">
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+			$('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+		});
+		</script>
+		</div>
+		
+		
+	</body>
+</html>

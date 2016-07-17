@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>bilibili 2015动画角色人气大赏 - 投票页 - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+		<meta name="description" content="" />
+<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+		
+		<link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+		<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+		
+		
+		
+	</head>
+
+	<body>	
+		<div class="z_top">
+			<div class="z_header">
+				<div class="z_top_nav">
+					<ul>
+	<li class="home">
+		<a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+	</li>
+		<li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+	<li class="b-gc" hasframe="true">
+		<a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+		<div class="i_div game" data-frame="game"></div>
+	</li>
+		<li class="live" hasframe="true">
+		<a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a>
+		<div class="i_div stream" data-frame="stream"></div>
+	</li>
+	<li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+	<li class="b-ml"><a class="i-link" target="_blank" href="http://bml.bilibili.com/index2016/?nav" title="BML">BML<em class="new"></em></a></li>
+	<li class="yoo" hasframe="true">
+		<a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+		<div class="i_div travel" data-frame="travel"></div>
+	</li>
+</ul>				</div>
+				<div class="uns_box">
+	<ul class="menu">
+		<li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+			<a class="i-link" href="http://space.bilibili.com/" target="_blank">
+				<img class="i_face">
+			</a>
+			<div id="i_menu_profile" class="i_menu">
+				<div class="i_menu_bg_t"></div>
+				<div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+				<div class="member-menu-wrp">
+					<ul class="member-menu">
+						<li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+						<li><a href="http://member.bilibili.com/#video_manage" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+						<li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+						<li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+					</ul>
+				</div>
+				<div class="member-bottom">
+					<a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+				</div>
+			</div>
+		</li>
+		<li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+        </li>
+		<li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+			<div class="num" id="dynamic_num_total"></div>
+			<a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+		</li>
+		<li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+			<a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+		</li>
+		<li id="i_menu_history_btn" guest="no" class="u-i">
+			<a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+		</li>
+		<li id="i_menu_login_reg" guest="yes" class="u-i">
+			<a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+		</li>
+		<li class="u-i b-post">
+			<a class="i-link" href="http://member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+			<ul class="s-menu">
+				<li><a href="http://member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+				<li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+
+		
+
+<!-- custom__app__controller -->
+<div class="custom__app__controller">
+    <script>
+        (function (UA) {
+            var pattern = /Android|BlackBerry|IEMobile|Windows Phone|iPad|iPhone|iPod|SymbianOS|Mobile|Tablet/i;
+
+            if (pattern.test(UA)) {
+                location.href = 'http://www.bilibili.com/html/moe2015-m.html'; //这里就是跳到手机页面的首页
+            }
+        })(window.navigator.userAgent);
+
+        (function () {
+            var head = document.head || document.getElementsByTagName('head')[0],
+                meta = document.createElement('meta'),
+                link = document.createElement('link');
+            meta.name = 'viewport';
+            meta.content = 'width=1200';
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'http://i2.hdslb.com/u_user/activities/moeru-season-1/scss/vote.min.css?_=6.0.0';
+            head.appendChild(meta);
+            head.appendChild(link);
+        })();
+        window.aid = 3134184;
+        $(document).ready(function () { biliAdjust(true); $(window).resize(biliAdjust); });
+    </script>
+    <!--[if lt IE 9]><script src="http://static.hdslb.com/js/activity/html5shiv.js"></script><![endif]-->
+
+
+    <aside class="modal-dialog hidden">
+        <div class="inner">
+            <article class="captcha container hidden">
+                <div class="title">领取投票资格需要<b>花费1硬币</b>，同一投票时段不可重复领取。</div>
+                <div class="form">
+                    <label for="captcha">请您输入验证码：</label>
+                    <img src="http://moe.bilibili.com/captcha" alt="captcha" title="点击重新获取验证码"/>
+                    <input type="text" id="captcha" placeholder="验证码"/>
+                    <div class="buttons">
+                        <button class="confirm">确定</button>
+                        <button class="cancel">取消</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="banned container hidden">
+                <div class="title">2015年9月1日之后注册的用户不能进行投票哦~</div>
+                <ul class="share-list">
+                    <li class="share-btn" title="分享到微博" data-id="btn_weibo"></li>
+                    <li class="share-btn" title="扫一扫 分享到微信" data-id="btn_weixin"></li>
+                    <li class="share-btn" title="分享到QQ空间" data-id="btn_qqzone"></li>
+                    <li class="share-btn" title="分享到贴吧" data-id="btn_baidu"></li>
+                </ul>
+                <div>呼唤伙伴一起来为喜欢的角色加油吧~！</div>
+                <button class="confirm">确定</button>
+            </article>
+
+            <article class="share-alone container hidden">
+                <div class="title">呼唤伙伴一起来为喜欢的角色加油吧~！</div>
+                <div class="role">
+                    <div class="group-1"></div>
+                    <div class="group-2"></div>
+                </div>
+                <div class="content">
+                    <div>您已成功参与今天的投票！</div>
+                    <div>你已选择：</div>
+                    <div class="selected-name"></div>
+                    <div class="call-in">你对角色的爱已经成功传达出去！不妨也叫上你的好基友一起来参与吧！</div>
+                    <ul class="share-list-alone">
+                        <li class="share-btn" title="分享到微博" data-id="btn_weibo"></li>
+                        <li class="share-btn" title="扫一扫 分享到微信" data-id="btn_weixin"></li>
+                        <li class="share-btn" title="分享到QQ空间" data-id="btn_qqzone"></li>
+                        <li class="share-btn" title="分享到贴吧" data-id="btn_baidu"></li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <a class="to-result" href="http://www.bilibili.com/html/moe2015-result.html">前往详情页</a>
+                    <a class="to-home" href="http://www.bilibili.com/html/moe2015.html">返回首页</a>
+                </div>
+            </article>
+        </div>
+    </aside>
+
+    <header class="figure">
+        <nav class="navi">
+            <div class="left">
+                <a class="item item-1" href="http://www.bilibili.com/html/moe2015.html">首页</a>
+                <a class="item item-2" href="http://www.bilibili.com/html/moe2015-result.html">赛程/结果</a>
+            </div>
+            <div class="right">
+                <a class="item item-4" href="http://www.bilibili.com/html/moe2015.html#rule-introduction">奖品/规则</a>
+                <span class="item item-5" style="cursor: not-allowed; color: #e3c9ea;">投票</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="inner">
+            <article class="module-1">
+                <div class="title"></div>
+                <div class="content clearfix">
+                    <div class="left">
+                        <div class="rule-title">表演赛规则</div>
+                        <div class="bulltin">
+                            <p>·&nbsp;进行8组对决，每组2名角色，每组最多可选1名角色。</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="notice">消费 1 硬币领取当天投票资格</div>
+                        <button class="buy-ticket" id="buy-ticket" disabled></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="module-2">
+                <div class="title-icon"></div>
+                <ul class="content clearfix"></ul>
+            </article>
+
+            <article class="module-3">
+                <div class="title-icon"></div>
+                <ul class="content clearfix"></ul>
+            </article>
+
+            <article class="module-4">
+                <section class="inner">
+                    <h1 class="title">今天休息哦~</h1>
+                    <p class="notice">具体赛程可前往&lt;<a class="result-page" href="http://www.bilibili.com/html/moe2015-result.html">赛程/结果</a>&gt;页查看</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="gradient-bottom">
+            <aside class="divsion-line"></aside>
+
+            <article class="select-role">
+                <aside class="effect"></aside>
+
+                <div class="inner">
+                    <div class="role-container clearfix">
+                        <ul class="female-container clearfix">
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">A组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">B组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">C组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">D组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="title">
+                            <li>已</li>
+                            <li>选</li>
+                            <li>角</li>
+                            <li>色</li>
+                        </ul>
+
+                        <ul class="male-container clearfix">
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">A组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">B组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">C组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="outer-item">
+                                <div class="grey-box">
+                                    <div class="color-box"></div>
+                                    <div class="gradient-box"></div>
+                                    <div class="group-title">
+                                        <div class="corner-1"></div>
+                                        <div class="title">D组</div>
+                                        <div class="corner-2"></div>
+                                    </div>
+                                    <div class="plus-icon"></div>
+                                    <div class="grid-item">
+                                        <span class="close-icon"></span>
+                                        <img src="http://i2.hdslb.com/u_user/activities/moeru-season-1/img/transparent_100_140.png"/>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="interactive-container clearfix">
+                        <div class="selected">
+                            <div>已经选择：红区&nbsp;<b class="female">0</b>&nbsp;人</div>
+                            <div>蓝区&nbsp;<b class="male">0</b>&nbsp;人</div>
+                        </div>
+                        <button class="submit" id="submit" disabled></button>
+
+                        <section class="confirm-dialog hidden">
+                            <h3>确认提交投票？</h3>
+                            <p>表演赛阶段，红/蓝区(每组)只可选1名</p>
+                            <p>目前你已选择红区&nbsp;<b class="female">0</b>&nbsp;人，蓝区&nbsp;<b class="male">0</b>&nbsp;人</p>
+                            <div class="buttons">
+                                <button class="confirm"></button>
+                                <button class="cancel"></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- perform -->
+    <footer class="comment container" id="comment">
+        <div class="arc-tool-bar">
+            <div class="block share">
+                <span class="t">分享</span>
+                <ul class="share-list" id="share_list">
+                    <li class="share-btn" id="btn_weibo" title="分享到微博"></li>
+                    <li class="share-btn" id="btn_weixin" title="扫一扫 分享到微信"></li>
+                    <li class="share-btn" id="btn_qqzone" title="分享到QQ空间"></li>
+                    <li class="share-btn" id="btn_baidu" title="分享到贴吧"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box-body row">
+            <div class="common">
+                <div class="comm">
+                    <div id="load_comment" class="comm_open_btn"
+                         onclick="var fb = new bbFeedback('.comm', 'arc'); fb.show(3134184, 1);" style="cursor: pointer;"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://static.hdslb.com/js/jquery-ui.min.js"></script>
+    <script src="http://static.hdslb.com/js/jquery.qrcode.min.js"></script>
+    <script src="http://static.hdslb.com/js/core-v5/page.arc.js"></script>
+    <script src="http://static.hdslb.com/js/jquery.xdomainrequest.min.js"></script>
+    <script src="http://i2.hdslb.com/u_user/activities/moeru-season-1/js/vote.min.js?_=6.0.0"></script>
+</div>
+<!-- /.custom__app__controller -->
+
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">Bilibili</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+					<a target="_blank" href="https://shop151111231.taobao.com/"><div class="cards taobao"><em></em></div></a>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+				</li>
+				<li>
+					<div class="tips">帮助</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+					<div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+					<div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+				</li>
+			</ul><div class="partner">
+				<div class="block left">
+					<div class="partner-banner"></div>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+					<p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+					<p>信息网络传播视听节目许可证：<span>0910417</span></p>
+					<p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+					<p>沪ICP证：<span>沪B2-20100043</span></p>
+					<p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+					<p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+				</div>
+			</div>
+			<div class="block right">
+				<a target="_blank" href="http://app.bilibili.com/">
+					<div class="phone">
+						<div class="pic"></div>
+						<em>手机端下载</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-app">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a target="_blank" href="http://weibo.com/bilibiliweb">
+					<div class="weibo">
+						<div class="pic"></div>
+						<em>新浪微博</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weibo">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a id="weixin">
+					<div class="weixin">
+						<div class="pic"></div>
+						<em>官方微信</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weixin">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	
+		
+		<script type="text/javascript">loadLoginStatus();</script>
+		<div style="display:none;">
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+			$('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+		});
+		</script>
+		</div>
+		
+		
+	</body>
+</html>

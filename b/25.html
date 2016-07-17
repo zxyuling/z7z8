@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>第二届弹幕大赛 - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+		<meta name="description" content="" />
+<meta name="keywords" content="" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+		
+		<link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+		<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+		
+		
+		
+	</head>
+
+	<body>	
+		<div class="z_top">
+			<div class="z_header">
+				<div class="z_top_nav">
+					<ul>
+	<li class="home">
+		<a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+	</li>
+		<li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+	<li class="b-gc" hasframe="true">
+		<a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心</a>
+		<div class="i_div game" data-frame="game"></div>
+	</li>
+		<li class="live" hasframe="true">
+		<a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a>
+		<div class="i_div stream" data-frame="stream"></div>
+	</li>
+	<li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+	<li class="b-ml"><a class="i-link" target="_blank" href="http://bml.bilibili.com/index2016/?nav" title="BML">BML<em class="new"></em></a></li>
+	<li class="yoo" hasframe="true">
+		<a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+		<div class="i_div travel" data-frame="travel"></div>
+	</li>
+</ul>				</div>
+				<div class="uns_box">
+	<ul class="menu">
+		<li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+			<a class="i-link" href="http://space.bilibili.com/" target="_blank">
+				<img class="i_face">
+			</a>
+			<div id="i_menu_profile" class="i_menu">
+				<div class="i_menu_bg_t"></div>
+				<div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+				<div class="member-menu-wrp">
+					<ul class="member-menu">
+						<li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+						<li><a href="http://member.bilibili.com/#video_manage" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+						<li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+						<li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+					</ul>
+				</div>
+				<div class="member-bottom">
+					<a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+				</div>
+			</div>
+		</li>
+		<li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+        </li>
+		<li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+			<div class="num" id="dynamic_num_total"></div>
+			<a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+		</li>
+		<li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+			<a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+		</li>
+		<li id="i_menu_history_btn" guest="no" class="u-i">
+			<a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+		</li>
+		<li id="i_menu_login_reg" guest="yes" class="u-i">
+			<a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+		</li>
+		<li class="u-i b-post">
+			<a class="i-link" href="http://member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+			<ul class="s-menu">
+				<li><a href="http://member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+				<li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+
+		
+<script type="text/javascript">
+    if(window.browser.version.mobile) { window.location.href = "http://www.bilibili.com/html/mobile_barrage.html"; }
+</script>  
+<link rel="stylesheet" type="text/css" href="http://i2.hdslb.com/u_user/activities/2015danmu/css/danmu12.css">
+<script type="text/javascript" src="http://static.hdslb.com/js/page.arc.js"></script>
+<script type="text/javascript" src="http://i1.hdslb.com/u_user/activities/2015danmu/js/b-danmu1.js"></script>
+        <div class="d-box">
+            <div class="d-side">
+                <ul data-rol = 'my-button'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bg-01">
+                <a href="http://www.bilibili.com/topic/153.html" target="_blank"></a>
+            </div>
+            <div class="bg-02" data-rol = "slide-position">
+                <div class="bg-02-body">
+                    <div class="art-body">
+                        <div class="art-left">
+                            <a href="http://www.bilibili.com/video/av2739681/" target="_blank">
+                                <img src="http://i1.hdslb.com/video/20/206e12ea25940b21f0c4686b7495a05c.jpg" alt="">
+                                <p class="art-title" title="【纯弹幕静止MAD】真物的花纹">【纯弹幕静止MAD】真物的花纹</p><p>(9.73)</p>
+                            </a>
+                            <div class="label-01"></div>
+                        </div>
+                        <!-- 弹幕艺术类 -->
+                        <div class="art-right">
+                            <ul>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2775802/" target="_blank">
+                                        <img src="http://i0.hdslb.com/video/38/38d2e38f947baa32fd03c5c1e3d8abd8.jpg" alt="">
+                                        <p class="d-title" title="【弹幕PV】世界终结舞厅">【弹幕PV】世界终结舞厅</p><p>(9.33)</p>
+                                    </a>
+                                    <div class="label-02"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2669196/" target="_blank">
+                                        <img src="http://i2.hdslb.com/video/c2/c25f49c052577fd2163c9160faf10416.jpg" alt="">
+                                        <p class="d-title" title="[应援][高级弹幕]DECORATOR_TeddyLoid_remix_">[应援][高级弹幕]DECORATOR_TeddyLoid_remix_</p><p>(9.32)</p>
+                                    </a>
+                                    <div class="label-02 label-03"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2714148/" target="_blank">
+                                        <img src="http://i0.hdslb.com/video/f0/f026bf50401f14d2a0a2d884645de750.jpg" alt="">
+                                        <p class="d-title" title="【燃】JOJO—勇气的战歌【纯弹幕MAD】">【燃】JOJO—勇气的战歌【纯弹幕MAD】</p><p>(9.25)</p>
+                                    </a>
+                                    <div class="label-02 label-04"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2555600/" target="_blank">
+                                        <img src="http://i1.hdslb.com/video/48/48654289b95f26befe55cd40266950f9.jpg" alt="">
+                                        <p class="d-title" title="【弹幕】WAVE">【弹幕】WAVE</p><p>(9.22)</p>
+                                    </a>
+                                    <div class="label-02 label-05"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 弹幕游戏类 -->
+                    <div class="art-body" style="padding-top:85px;">
+                        <div class="art-left">
+                            <a href="http://www.bilibili.com/video/av2718860/" target="_blank">
+                                <img src="http://i2.hdslb.com/video/44/449bf605a721579ef6d044c6d5d5d74a.jpg" alt="">
+                                <p class="art-title" title="【弹幕游戏】弹幕世界 DanmakuCraft">【弹幕游戏】弹幕世界 DanmakuCraft</p><p>(9.30)</p>
+                            </a>
+                            <div class="label-01"></div>
+                        </div>
+                        <div class="art-right">
+                            <ul>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2708700/" target="_blank">
+                                        <img src="http://i2.hdslb.com/video/e4/e48c624f9e4d229ff33bc2262c8176eb.jpg" alt="">
+                                        <p class="d-title" title="「弹幕游戏」FINAL FASTFOOD: 五教之战">「弹幕游戏」FINAL FASTFOOD: 五教之战</p><p>(9.23)</p>
+                                    </a>
+                                    <div class="label-02"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2662626/" target="_blank">
+                                        <img src="http://i0.hdslb.com/video/3d/3db6bf05838e960d2b2e1786402a4293.jpg" alt="">
+                                        <p class="d-title" title="【高级弹幕游戏】弹幕流星雨Ver3.0">【高级弹幕游戏】弹幕流星雨Ver3.0</p><p>(9.14)</p>
+                                    </a>
+                                    <div class="label-02 label-03"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2676643/" target="_blank">
+                                        <img src="http://i1.hdslb.com/video/4c/4cfc85fba4527972a0f56a678c17474f.jpg" alt="">
+                                        <p class="d-title"  title="【弹幕黑科技】名副其实的弹幕游戏·第二弹">【弹幕黑科技】名副其实的弹幕游戏·第二弹</p><p>(9.11)</p>
+                                    </a>
+                                    <div class="label-02 label-04"></div>
+                                </li>
+                                <li>
+                                    <a href="http://www.bilibili.com/video/av2785213/" target="_blank">
+                                        <img src="http://i0.hdslb.com/video/0f/0f9aadd0a3f6a8f2119b27103e8ba851.jpg" alt="">
+                                        <p class="d-title" title="【高级弹幕】弹幕也能玩音乐游戏~">【高级弹幕】弹幕也能玩音乐游戏~</p><p>(9.08)</p>
+                                    </a>
+                                    <div class="label-02 label-05"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-prize">
+                        <ul class="d-prize-l">
+                            <li>
+                                <a href="http://www.bilibili.com/video/av2556168/"  target="_blank">
+                                    <img src="http://i1.hdslb.com/video/66/664556308c8cb8a9a89ffb9385557945.jpg" alt="">
+                                    <p class="d-title" title="[黑屏弹幕]【东方Vocal】Artificial Children【IOSYS】">[黑屏弹幕]【东方Vocal】Artificial Children【IOSYS】</p>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="prize-text">
+                                     无论从艺术性和设计性上来看本作品都具有很高的完成度，以M7单纯的移动和旋转为工具，不是通过复杂的代码而是通过对色彩和空间甚至时间轴的准确把握以及多样化的特效运用使得观众得以专心享受古典、简洁而优雅的弹幕，既诠释了弹幕的原点也体现了弹幕艺术的本心。
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="d-prize-r">
+                            <li style="margin-bottom:41px;">
+                                <a href="http://space.bilibili.com/3797750/#!/index" target="_blank">
+                                    <img src="http://i0.hdslb.com/account/face/3797750/154339c5/myface.png" alt="">
+                                    <div class="d-user">
+                                        <p>傀凉</p>
+                                        <div class="d-signatures" title="她从背后捅了你一刀，然后把刀放在我手里，惊慌的看着我，跑过去问你疼不疼.">
+                                            她从背后捅了你一刀，然后把刀放在我手里，惊慌的看着我，跑过去问你疼不疼。
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://space.bilibili.com/2288611#!/index"  target="_blank">
+                                    <img src="http://i0.hdslb.com/account/face/2288611/835b8866/myface.png" alt="">
+                                    <div class="d-user">
+                                        <p>双漠狼烟</p>
+                                        <div class="d-signatures" title="其实我只喜欢童颜巨乳的人">
+                                            其实我只喜欢童颜巨乳的人
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               <a href="http://www.bilibili.com/topic/816.html" target="_blank"><div class="btn-linke">【点击进入获奖公示详细页面】</div></a>
+            </div>
+            <div class="bg-05" data-rol = "slide-position">
+                <div class="bg-05-body">
+                    <iframe src="http://www.bilibili.com/list/vote/12.html" marginheight="0" marginwidth="0" width="100%" frameborder="0"scrolling="no" name="iframepage1" id="frame_content1" style="border:none; padding-top:10px; height:580px;">
+                     </iframe>
+                    <iframe src="http://www.bilibili.com/list/vote/13.html" marginheight="0" marginwidth="0" width="100%" frameborder="0"scrolling="no" name="iframepage2"  id="frame_content2" style="border:none; padding-top:10px; height:580px;margin-top:50px">
+                     </iframe>
+                </div>
+            </div>
+            <div class="bg-03" data-rol = "slide-position">
+                <ul>
+                    <li><a href="http://www.bilibili.com/video/av58515/"  target="_blank"></a></li>
+                    <li><a href="http://www.bilibili.com/video/av412614/" target="_blank"></a></li>
+                    <li><a href="http://www.bilibili.com/video/av451734/" target="_blank"></a></li>
+                    <li><a href="http://www.bilibili.com/video/av1052150/" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="bg-04">
+                <a href="http://docs.bilibili.cn/wiki/%E5%88%86%E7%B1%BB:Script" target="_blank"><div class="senior"></div></a>
+            </div>
+            <div class="bg-06" data-rol = "slide-position" >
+                <ul class="bg-06-top">
+                    <li><div class="t-zi"></div></li>
+                    <li><div class="t-zi"></div></li>
+                    <li><div class="t-zi"></div></li>
+                    <li><div class="t-zi"></div></li>
+                </ul>
+                <div class="bg-06-bt">
+                    <div class="bt-box">
+                        <div class="bt-text">
+                            <p>1.代金券使用期限：自发券起一年内</p>
+                            <p>2.每张代金券最多供两人同时同次使用</p>
+                            <p>3.代金券使用范围仅限用于参与bilibiliyoo旅游网站上发布的旅行团</p>
+                            <p>4.中奖人使用代金券参团的流程、步骤、时间与正常参团者相同。错过该团报名时间或该团已满的情况下无法参团</p>
+                            <p>5.如总金额超出代金券额度的，超出部分需要补足；总金额低于代金券额度的，差价部分不能折现，也不能挪作他用</p>
+                            <p>6.本活动解释权归bilibili及bilibiliyoo所有</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-email">如有问题请联系 : nya@bilibili.com</div>
+            </div>
+        </div>
+        
+		<!-- 主站分享开始 -->
+		<div class="arc-tool-bar" data-rol = "slide-position">
+		    <div class="block share"><span class="t">分享</span>
+		        <div class="share-list" id="share_list">
+		            <div class="share-btn" id="btn_weibo" title="分享到微博"></div>
+		            <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信"></div>
+		            <div class="share-btn" id="btn_qqzone" title="分享到QQ空间"></div>
+		            <div class="share-btn" id="btn_baidu" title="分享到贴吧"></div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="box-header">评论列表</div>
+		<div class="box-body">
+		    <div class="comment-container">
+		        <!--评论-->
+		        <div class="common">
+		            <div class="comm">
+		                 <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(2484623, 1);" style="cursor:pointer"></div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+        <script type="text/javascript">loadLoginStatus();</script> 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var shareTxt ='#bilibili弹幕大赛# 又到夏天了，又到捕获触手的时候了！ 活动时间7月11日~8月28日，少年，膝盖的储备还足够吗？';
+                bindShare({
+                    url: window.location.href,
+                    title: shareTxt,
+                    pic: 'http://i0.hdslb.com/u_user/activities/2015danmu/img/share1.jpg',
+                    desc: '#bilibili弹幕大赛# 又到夏天了，又到捕获触手的时候了！ 活动时间7月11日~8月28日，少年，膝盖的储备还足够吗？',
+                    summary: ' ',
+                    shortTitle: document.title,
+                    searchPic: false
+                }, "#share_list .share-btn, #share_list_simple .share-btn");
+
+            })
+        </script>   
+<div class="footer">
+	<div class="footer-wrp">
+		<div class="footer-cnt clearfix">
+			<ul class="boston-postcards">
+				<li>
+					<div class="tips">Bilibili</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+					<a target="_blank" href="https://shop151111231.taobao.com/"><div class="cards taobao"><em></em></div></a>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+				</li>
+				<li>
+					<div class="tips">帮助</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+					<div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+					<div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+				</li>
+				<li>
+					<div class="tips">传送门</div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+					<div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+					<div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+					<div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+					<div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+					<div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+				</li>
+			</ul><div class="partner">
+				<div class="block left">
+					<div class="partner-banner"></div>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+					<p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+					<p>信息网络传播视听节目许可证：<span>0910417</span></p>
+					<p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+				</div>
+				<div class="block left" style="margin: 0 0 0 10px;">
+					<p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+					<p>沪ICP证：<span>沪B2-20100043</span></p>
+					<p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+					<p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+				</div>
+			</div>
+			<div class="block right">
+				<a target="_blank" href="http://app.bilibili.com/">
+					<div class="phone">
+						<div class="pic"></div>
+						<em>手机端下载</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-app">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a target="_blank" href="http://weibo.com/bilibiliweb">
+					<div class="weibo">
+						<div class="pic"></div>
+						<em>新浪微博</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weibo">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a id="weixin">
+					<div class="weixin">
+						<div class="pic"></div>
+						<em>官方微信</em>
+						<div class="qrcode-box-wrp">
+							<div class="qrcode-box qrcode-weixin">
+								<div class="qrcode-box-arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	
+		
+		<script type="text/javascript">loadLoginStatus();</script>
+		<div style="display:none;">
+		<script type="text/javascript">
+		$(function(){
+			$.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+			$('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+			$('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');	
+		});
+		</script>
+		</div>
+		
+		
+	</body>
+</html>
