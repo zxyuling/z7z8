@@ -12,23 +12,22 @@ class spider:
 	urldoneset=set()
 	timeout=3
 	doSth = lambda self,dom:dom
-	def __init__(self,url,allnet,timeout,callback=lambda dom:dom):
+	def __init__(self,url,allnet,timeout,callback=lambda dom,url:dom):
 		self.url = url
 		self.allnet = int(allnet)
 		self.urllist.append(url)
 		self.timeout=int(timeout)
 		self.doSth=callback
 	def gethtmldom(self,url):	#打开url获取网页dom
-		try:
-			req = urllib.request.Request(url);
-			page = urllib.request.urlopen(req,timeout=self.timeout)
-			self.curl = page.geturl()
-			htmldom = page.read()
-			self.doSth(htmldom)
-			return htmldom
-		except :
-			print('getError')
-			return '';
+			try:
+				req = urllib.request.Request(url);
+				page = urllib.request.urlopen(req,timeout=self.timeout)
+				self.curl = page.geturl()
+				htmldom = page.read()
+				self.doSth(htmldom,self.curl)
+				return htmldom
+			except:
+				return '';
 	def geturllist(self,url):	#将文档中包含的url通通加入到url列表中等待访问
 		tmpurl=re.findall('<a\s+[^>]*[\s]*href[\s]*=[\s]*[\'\"]([^>^\'^\"]*)[\'\"][\s]*[^>]*>',str(self.gethtmldom(url)))#匹配文档中的url
 		domain=re.findall(r'^(?:https?://)?[\w\.]*',self.curl)#获取该网页的域名

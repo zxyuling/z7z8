@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@keyframes mask {
+   	 from {background-position:0 0;}
+   	 to {background-position:-100% 0;}
+	}
+	body
+	{
+		background-color: #07300F;
+	}
+	.liner
+	{
+		background: -webkit-linear-gradient(45deg, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+		-webkit-background-clip:text;
+		background-size: 200% 100%;
+		-webkit-text-fill-color:transparent;
+		-webkit-animation: mask 4s infinite linear;
+		font-size: 48px;
+	}
+	</style>
+</head>
+<body>
+	<div class="liner">
+		<h1>这是一段渐变的文字</h1>
+	</div>
+</body>
+</html>

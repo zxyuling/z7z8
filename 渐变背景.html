@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+	width:500px;
+	height:500px;
+	margin: 300px auto;
+	outline: 1px solid red;
+	background: linear-gradient(45deg, red 50%, transparent 50%),linear-gradient(45deg, transparent 50%, blue 50%);
+	background-repeat: no-repeat;
+	background-size: 200% 200%,200% 200%;
+	background-position: 200% 100%,0% 100%;
+	transition:background-position 0.3s linear; 
+}
+div:hover{
+	background-size: 200% 200%,200% 200%;
+	background-position: 100% 100%,100% 100%;
+}
+</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

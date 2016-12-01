@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.m1
+		{
+			width: 100px;
+			height: 100px;
+			background: #000;
+			border-radius: 50%;
+			position: absolute;
+			left: 500px;
+			top: 500px;
+		}
+		.m2
+		{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			left: 300px;
+			top: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="m1"></div>
+	<div class="m2"></div>
+	<script src="./m.js"></script>
+	<script>
+		var 速度运算 = new 物质();
+		function m1运动()
+		{
+			var m1 = document.querySelector('.m2');
+			var css = window.getComputedStyle(m1);
+			m1.style.left=parseInt(css.left)+速度运算.速度(0,10,window.宙/1000)+'px';
+			m1.style.top=parseInt(css.top)+速度运算.速度(0,10,window.宙/1000)+'px';
+		}
+		时间.加入(m1运动);
+		时间.开始();
+	</script>
+</body>
+</html>
