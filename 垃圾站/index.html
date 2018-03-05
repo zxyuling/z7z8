@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="can" width='1920px' height="1000px"></canvas>
+</body>
+<script src="./dt.js"></script>
+<script>
+window.onload=()=>alert(1)
+var t = new DT([[100,100],[100,0],[150,180],[300,100],[100,200]]).getDT([[1,1],[1,0],[2,2]])
+const canvas=document.getElementById('can');
+const ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+console.log(t)
+t.forEach(item=>{
+	ctx.beginPath();
+	ctx.moveTo(item[0][0],item[0][1])
+	ctx.lineTo(item[1][0],item[1][1])
+	ctx.lineTo(item[2][0],item[2][1])
+	ctx.lineTo(item[0][0],item[0][1])
+	ctx.stroke()
+	ctx.closePath()
+})
+</script>
+</html>
