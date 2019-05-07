@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" version="1.1">
+    <circle cx="150" cy="150" r="150" stroke="black" fill="white"/>
+  <polygon points=""
+  style="fill:#41B883"/>
+</svg>
+<input type="text" oninput="input('NUM')" id="NUM" placeholder="数量">
+<input type="text" oninput="input('V')" id="V" placeholder="速度">
+<input type="text" oninput="input('R')" id="R" placeholder="半径">
+<script>
+//cp -rf ./dist /data/www/yczb_deploy
+    window.NUM = 20
+    window.V = 500
+    window.R = 0.9
+    let timer = null
+    const input = e =>{
+        clearInterval(timer)
+        window[e] = +document.querySelector('#'+e).value
+        NUM = NUM>3?NUM:3
+        V=V>50?V:50
+        R=R>0?R:0.1
+        R=R<1?R:1
+        init()
+    }
+    let svg = document.getElementsByTagName('polygon')[0]
+    let p =[];
+    const init = () =>{
+
+        svg.setAttribute('points','') 
+        for(let i=0;i<NUM;i++){
+            let r = Math.random()*(1-R)+R;
+            let S = document.getElementsByTagName('svg')[0].createSVGPoint();
+            S.x = 150+r*150*Math.cos(Math.PI*2*i/NUM)
+            S.y = 150-r*150*Math.sin(Math.PI*2*i/NUM)
+            svg.points.appendItem(S);
+        }
+        timer = setInterval(()=>{
+            p=[];
+            const svgPoints = svg.points
+            for(let i = 0; i<NUM; i++){
+                let r = Math.random()*(1-R)+R;
+                let point = {
+                    x:svgPoints[i].x-150-r*150*Math.cos(Math.PI*2*i/NUM),
+                    y:svgPoints[i].y-150+r*150*Math.sin(Math.PI*2*i/NUM)
+                }
+                p.push(point)
+            }
+        },V)
+    }
+    init()
+    const ani=()=>{
+    let t = +new Date()
+        p.forEach((item,index)=>{
+            if(!svg.points[index]){
+                return 
+            }
+            svg.points[index].x-=item.x/V*17
+            svg.points[index].y-=item.y/V*17
+        })
+        requestAnimationFrame(ani);
+    }
+    ani()
+</script>

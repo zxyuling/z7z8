@@ -6,7 +6,8 @@ define(function(require,exports,module){
 	class CdTime{
 		/**
 		 * [constructor description]初始化函数
-		 * @param  {[type]} option [description] format:格式化，默认日时分秒都是2位不足2位补0;accuracy:倒计时速度，默认1s;todo：每秒的回调
+		 * @param  {[type]} option [description] format:格式化，默认日时分秒都是2位不足2位补0;accuracy:倒计时速度，默认1s;
+		 * todo：每秒的回调
 		 * before·：倒计时前的回调;after倒计时结束的回调;total总的需要倒计时多少;endTime:到某个未来时间点的倒计时
 		 * @return {[type]}        [description]
 		 */

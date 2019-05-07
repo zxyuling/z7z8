@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tree</title>
+	<style>
+	.root{
+		position: absolute;
+		top:100px;
+		background: #eee;
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	.parent{
+		position: absolute;
+		left: 300px
+	}
+	</style>
+</head>
+<body>
+	<div class="root"></div>
+	<div class="parent"></div>
+</body>
+<script src="./avl.js"></script>
+<script>
+	const drawNode = (node,parent,type,count=0)=>{
+		const root = document.querySelector('.root').cloneNode()
+		root.innerHTML = node.root
+		const len = node.height%2?50:80
+		if(type == 'left'){
+			root.style.left = `-${len}px`
+		}else{
+			root.style.left = `${len}px`
+		}
+		parent.appendChild(root)
+		if(node.left){
+			drawNode(node.left,root,'left',count++)
+		}
+		if(node.right){
+			drawNode(node.right,root,'right',count++)
+		}
+	}
+drawNode(tree,document.querySelector('.parent'))
+</script>
+</html>
