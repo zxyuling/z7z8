@@ -1,2 +1,2 @@
-import a from './utils'
-console.log(a)
+import c from './demo/demojs.js'
+import d from './demo.vue'

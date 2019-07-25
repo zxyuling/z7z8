@@ -14,10 +14,13 @@ const sort = (arr,c=(a,b)=>a>b) => {
 		return arr
 	}
 }
-console.log(sort(new Array(20).fill(0).map(item=>{
-	return Math.ceil(Math.random()*100)
-}),(a,b)=>a<b))	
-console.log(sort(['--',1,3,2,'--'],(a,b)=>{
+// console.log(sort(new Array(20).fill(0).map(item=>{
+// 	return Math.ceil(Math.random()*100)
+// }),(a,b)=>a<b))	
+console.log(sort([NaN,1,3,2,NaN],(a,b)=>{
+	if(b!==b||a!==a){
+		return 1 
+	}
 	if(typeof a == typeof b){
 		return a<b
 	}else{

@@ -1,8 +1,9 @@
 {
     "presets" : [
-        "env",
+        "env"
     ],
     "plugins": [
+    	"syntax-dynamic-import"
        // "transform-remove-console"
     ]
 }

@@ -11,17 +11,17 @@ module.exports = {
   mode:'none',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     publicPath: ''
   },
-  optimization: {
-     runtimeChunk: 'single',
-     splitChunks: {
-       chunks: 'all',
-       minSize:0,
-       minChunks:2,
-     }
-   },
+  // optimization: {
+  //    runtimeChunk: 'single',
+  //    splitChunks: {
+  //      chunks: 'all',
+  //      minSize:0,
+  //      minChunks:2,
+  //    }
+  //  },
   devServer: {
 	  contentBase: './dist'
 	},
@@ -31,8 +31,14 @@ module.exports = {
 	        test: /\.js$/,
 	         exclude: /node_modules/, 
 	         //loader: "./loader.js"
-           use:["babel-loader","./loader.js"]
+           use:["babel-loader"]
 	    },
+      {
+          test: /\.vue$/,
+           exclude: /node_modules/, 
+           // loader: "./loader.js",
+           use:["./loader.js"]
+      },
 	    {
 	        test: /\.css$/,
 	        exclude: /node_modules/, 
@@ -51,7 +57,9 @@ module.exports = {
   },
   plugins: [
       new HtmlWebpackPlugin({
-        title: 'Output Management'
+        title: 'Output Management',
+        filename: 'index.html',
+        template: 'index.html',
       }),
       new myplugin({a:1})
     ],

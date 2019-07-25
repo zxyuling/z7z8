@@ -11,7 +11,8 @@ var _utils2 = _interopRequireDefault(_utils);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(function () {})(_utils2.default);
+var b = Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 1, 7))(function () {})(_utils2.default);
+console.error(b);
 
 /***/ }),
 /* 1 */

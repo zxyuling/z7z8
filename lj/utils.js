@@ -23,6 +23,21 @@ export default  {
     },
     sleep(time){
         for(let i = +new Date();i+time>+new Date();){}
+    },
+    copy(obj,hash = new Map){
+        const isObj = (obj) => typeof obj === 'object' && obj != null
+        if(!isObj(obj)) return obj
+        if(hash.has(obj)) return hash.get(obj)
+        const newObj = Array.isArray(obj)?[]:{}
+        hash.set(obj,newObj)
+        for(let i in obj){
+            const item = obj[i]
+            if(isObj(item)){
+                newObj[i] = this.copy(item,hash)
+            }else{
+                newObj[i] = item
+            }
+        }
     }
 }
 
