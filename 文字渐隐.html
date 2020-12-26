@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@keyframes mask {
+   	 from {margin-left:0;}
+   	 to {margin-left: 200px;}
+	}
+	.liner
+	{
+		background: -webkit-linear-gradient(90deg, black,transparent 50%);
+		-webkit-background-clip:text;
+		-webkit-text-fill-color:transparent;
+		font-size: 48px;
+	}
+	h1{
+		-webkit-animation: mask 4s infinite linear;
+		width: 200px
+	}
+	</style>
+</head>
+<body>
+	<div class="liner">
+		<!-- <h1>这是一段渐隐的文字</h1> -->
+		<img src="./colortype6.png" alt="">
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用WebGL绘制一个点</title>
+</head>
+<body>
+<!--canvas标签创建一个宽高均为500像素，背景为蓝色的矩形画布-->
+<canvas id="webgl" width="500" height="500" style="background-color: blue"></canvas>
+
+
+<script>
+   //通过getElementById()方法获取canvas画布
+   var canvas=document.getElementById('webgl');
+   //通过方法getContext()获取WebGL上下文
+   var gl=canvas.getContext('webgl');
+
+   //顶点着色器源码
+   var vertexShaderSource = `
+        varying vec2 vUv;
+        uniform vec2 scale;
+        uniform vec2 offset;
+{1}
+        void main( void ) {
+            vUv = uv * scale + offset;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+        }
+    `
+
+   //片元着色器源码
+   var fragShaderSource = `
+        varying vec2 vUv;
+        uniform float time;
+        vec3 random_perlin( vec3 p ) {
+            p = vec3(
+                    dot(p,vec3(127.1,311.7,69.5)),
+                    dot(p,vec3(269.5,183.3,132.7)), 
+                    dot(p,vec3(247.3,108.5,96.5)) 
+                    );
+            return -1.0 + 2.0*fract(sin(p)*43758.5453123);
+        }
+        float noise_perlin (vec3 p) {
+            vec3 i = floor(p);
+            vec3 s = fract(p);
+{1}
+            // 3D 网格有 8 个顶点
+            float a = dot(random_perlin(i),s);
+            float b = dot(random_perlin(i + vec3(1, 0, 0)),s - vec3(1, 0, 0));
+            float c = dot(random_perlin(i + vec3(0, 1, 0)),s - vec3(0, 1, 0));
+            float d = dot(random_perlin(i + vec3(0, 0, 1)),s - vec3(0, 0, 1));
+            float e = dot(random_perlin(i + vec3(1, 1, 0)),s - vec3(1, 1, 0));
+            float f = dot(random_perlin(i + vec3(1, 0, 1)),s - vec3(1, 0, 1));
+            float g = dot(random_perlin(i + vec3(0, 1, 1)),s - vec3(0, 1, 1));
+            float h = dot(random_perlin(i + vec3(1, 1, 1)),s - vec3(1, 1, 1));
+{1}
+            // Smooth Interpolation
+            vec3 u = smoothstep(0.,1.,s);
+{1}
+            // 根据八个顶点进行插值
+            return mix(mix(mix( a, b, u.x),
+                        mix( c, e, u.x), u.y),
+                    mix(mix( d, f, u.x),
+                        mix( g, h, u.x), u.y), u.z);
+        }
+        float noise_turbulence(vec3 p)
+        {
+            float f = 0.0;
+            float a = 1.;
+            p = 4.0 * p;
+            for (int i = 0; i < 5; i++) {
+                f += a * abs(noise_perlin(p));
+                p = 2.0 * p;
+                a /= 2.;
+            }
+            return f;
+        }
+        void main( void ) {
+            float c1 = noise_turbulence(vec3(vUv, time/10.0));
+            vec3 color = vec3(1.5*c1, 1.5*c1*c1*c1, c1*c1*c1*c1*c1*c1);
+            gl_FragColor = vec4( color, 1.0 );
+        }
+    `
+
+   //初始化着色器
+   var program = initShader(gl,vertexShaderSource,fragShaderSource);
+   //开始绘制，显示器显示结果
+   gl.drawArrays(gl.POINTS,0,1);
+
+   //声明初始化着色器函数
+   function initShader(gl,vertexShaderSource,fragmentShaderSource){
+       //创建顶点着色器对象
+       var vertexShader = gl.createShader(gl.VERTEX_SHADER);
+       //创建片元着色器对象
+       var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+       //引入顶点、片元着色器源代码
+       gl.shaderSource(vertexShader,vertexShaderSource);
+       gl.shaderSource(fragmentShader,fragmentShaderSource);
+       //编译顶点、片元着色器
+       gl.compileShader(vertexShader);
+       gl.compileShader(fragmentShader);
+
+       //创建程序对象program
+       var program = gl.createProgram();
+       //附着顶点着色器和片元着色器到program
+       gl.attachShader(program,vertexShader);
+       gl.attachShader(program,fragmentShader);
+       //链接program
+       gl.linkProgram(program);
+       //使用program
+       gl.useProgram(program);
+       //返回程序program对象
+       return program;
+   }
+</script>
+</body>
+</html>
